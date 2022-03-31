@@ -1,0 +1,49 @@
+{% extends "authentication/base.html" %}
+
+{% block title %}ELECTION COMMISSION RAIT{% endblock %}
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+</style>
+{% block content %}
+<div class="jumbotron" style="background-color:olive">
+  
+  {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-success" role="alert">
+      {{ message }}
+    </div>
+    {% endfor %}
+  {% endif %}
+  <div>
+    <h1>🙏🙏Election Commission RAIT-EC Welcomes You🙏🙏</h1>
+  </div>
+  <div>
+    <img src="/media/images/vote1.jpg" class="d-block w-100" alt="...">
+  </div>
+  <style>
+    h1{
+      color:white;
+      background-color: solid black;
+      
+      
+  }
+  .jumbotron{
+    background-image:url("/media/images/VoteHome.jpg");
+    background-size: cover;
+    {% comment %} border: 1px solid black; {% endcomment %}
+  }
+  </style>
+  <style>
+    body{
+      background-image:url("/media/images/VoteHome.jpg");
+      background-size: cover;
+      {% comment %} border: 10px solid red; {% endcomment %}
+      {% comment %} background-color:red; {% endcomment %} 
+  }
+  </style>
+</div>
+
+{% endblock %}

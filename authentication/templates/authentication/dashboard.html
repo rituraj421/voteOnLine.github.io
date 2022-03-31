@@ -1,0 +1,16 @@
+{% extends "authentication/base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+  <h1>Namaste🙏, {{request.user.get_full_name }}</h1>
+  <h2><a href="{% url 'position' %}">Please Click Here To Vote</a></h2>
+  <h2><a href="{% url 'result' %}">Please Click Here To See Result</a></h2>
+    <style>
+      body{
+        background-image:url("/media/images/VoteDashboard.jpg");
+        background-size: cover;
+    }
+    </style>
+  </div>
+{% endblock %}

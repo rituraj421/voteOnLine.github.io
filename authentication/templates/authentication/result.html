@@ -1,0 +1,31 @@
+{% extends "authentication/base.html" %}
+
+{% block title %}Result Page{% endblock %}
+
+{% block content %}
+  <h2 class="text-center">Result</h2>
+  <table class="table table-bordered table-sm text-center">
+    <thead>
+      <style>
+        body{
+            background-image:url("/media/images/VoteResult.jpg");
+            background-size: cover;
+        }
+    </style>
+      <tr>
+        <th>NAME OF CANDIDATE</th>
+        <th>POST OF CANDIDATE</th>
+        <th>Total NO. OF VOTES</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for i in obj %}
+        <tr>
+          <td>{{ i.name }}</td>
+          <td>{{ i.position }}</td>
+          <td>{{ i.total_vote }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}
