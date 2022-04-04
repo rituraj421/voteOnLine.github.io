@@ -115,3 +115,5 @@ def editProfileView(request):
         form = ChangeForm(instance=request.user)
     return render(request, "authentication/edit_profile.html", {'form':form})
 
+    #yeah it's done now
+
