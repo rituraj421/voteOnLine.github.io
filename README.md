@@ -1,9 +1,15 @@
 # online-voting-system-mini-project
 online voting system management 
-python/django/html/css
-make sure you have installed, 
-1) pillow(pip install pillow)
-2) django-widget-tweaks(pip install django-widget-tweaks)
+
+## Tools/Lang Used
+
+- python
+- django
+- html
+- css
+## make sure you have installed, 
+- pillow(pip install pillow)
+- django-widget-tweaks(pip install django-widget-tweaks)
 
 thats it 
 !!
